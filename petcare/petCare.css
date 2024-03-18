@@ -1,0 +1,135 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.nav-1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 100;
+    background-color: #c7e1d3;
+}
+.image-1{
+    height: 171px;
+}
+.image-2{
+    height: 185px;
+}
+.nav-img{
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 60px;
+    font-weight: 600;
+    color: black;
+}
+@media screen and (max-width:950px) {
+    .heading{
+        font-size: 30px;
+    }
+}
+
+.nav-2{
+    top: 150px;
+    position: fixed;
+    width: 15%;
+    background-color: #f2f2f2;
+    height: 100%;
+}
+.nav-center {
+    margin-top: 30%;
+    margin-left: 20%;
+}
+.nav-center a:hover{
+    color:  #f5967c;
+}
+.nav-center li{
+    list-style: none;
+}
+.nav-center a{
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    font-size: large;
+}
+@media screen and (max-width:950px) {
+    .nav-center a{
+        text-decoration: none;
+        color: black;
+        margin-right: 15px;
+        font-size: small;
+    }
+}
+.nav-center li:hover{
+    color: #f5967c;
+    text-decoration: underline;
+}
+
+.boxes{
+    margin-top: 12%;
+    margin-left: 16%;
+    margin-right: 1%;
+}
+@media screen and (max-width:950px) {
+    .boxes{
+        margin-top: 25%;
+    }
+}
+.box-1{
+    border-radius: 20px;
+    background-color:#f1c3b6;
+    padding: 15px;
+}
+.box-2{
+    background-color:#f8d0d0;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 15px;
+}.box-3{
+    background-color: #c7e1d3 ;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 15px;
+}
+.box-4{
+    background-color:#f7d8bb;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 15px;
+}
+.heading-dog{
+    padding: 10px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.one{
+    font-size: medium;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.one:hover{
+    text-decoration: underline;
+    color: rgb(52, 51, 51);
+}
+.images{
+    display:flex;
+    justify-content: space-around;
+    justify-content: center;
+}
+.images img{
+    width: 400px;
+    margin-right: 70px;
+}
+@media screen and (max-width:950px) {
+    .images img{
+        width: 250px;
+        margin-right: 0px;
+    }
+}
