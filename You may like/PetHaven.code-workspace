@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "PetHaven",
+			"path": "../Kamal/PetHaven"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PetHaven"
+	}
+}
