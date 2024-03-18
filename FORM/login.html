@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="box login-box">
+        <h1>Login</h1>
+        <form action="#">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+        </form>
+        <a href="/Main Page/main.html"><button>Login</button></a>
+        <div class="member">
+            Not a member?<a href="./signup.html">Register Now</a>
+        </div>
+    </div>
+    <script>
+        function storeLogin() {
+            const username = document.querySelector('.login-box input[type="text"]').value;
+            const password = document.querySelector('.login-box input[type="password"]').value;
+    
+          
+            const userDetails = localStorage.getItem(username);
+            if (userDetails) {
+                
+                const userDetailsObj = JSON.parse(userDetails);
+                
+                
+                if (userDetailsObj.password === password) {
+                    alert('You are now logged in.');
+                } else {
+                    alert('Incorrect password. Please try again.');
+                }
+            } else {
+                alert('Username does not exist. Please register.');
+            }
+        }
+    
+        document.querySelector('.login-box button').addEventListener('click', storeLogin);
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="box signup-box">
+        <h1>Sign Up</h1>
+        <form id="signupForm">
+            <input type="text" placeholder="Username" required>
+            <input type="text" placeholder="Name" required>
+            <input type="password" placeholder="Password" id="password" required>
+            <input type="password" placeholder="Re-Enter Password" id="confirm_password" required>
+            <div class="terms">
+                <input type="checkbox" id="checkbox" required>
+                <label for="checkbox">I agree to these <a href="#">Terms & conditions</a></label>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="member">
+            Already a member?<a href="./login.html">Login Here</a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            storeSignUp();
+        });
+    
+        function storeSignUp() {
+            const form = document.querySelector('#signupForm');
+            const username = form.elements[0].value;
+            const name = form.elements[1].value;
+            const password = form.elements[2].value;
+            const rePassword = form.elements[3].value;
+    
+            if (localStorage.getItem(username)) {
+                alert('Username already exists, please choose another.');
+                return;
+            }
+    
+
+            if (password === rePassword) {
+                
+                localStorage.setItem(username, JSON.stringify({ name: name, password: password }));
+                alert('You are now registered.'); 
+            } else {
+                
+                alert('Passwords do not match, please try again.');
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>
