@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: #f2f2f2;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.box{
+    width: calc(25% - 20px);
+    margin: 10px;
+    background: grey;
+    text-align: center;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+}
+a{
+    text-decoration: none;
+
+}
+
+.detail-box{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .detail-box a {
+    font-size: larger;
+    letter-spacing: 1px;
+    color: black;
+    text-decoration: none;
+} */
+
+.detail-box .name {
+    font-weight: bold;
+    letter-spacing: 1%;
+}
+.detail-box .price {
+    font-weight: 100;
+    letter-spacing: 1.5%;
+}
+.slide-img{
+    width: 100%;
+    height: 280px;
+    /* background: red; */
+}
+
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* @media (max-width : 1000px){
+    .box {
+        width: calc(40% - 20px); 
+    }
+} */
+
+@media (max-width: 900px) {
+    .box {
+        width: calc(30% - 20px); 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .box {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 500px) {
+    .box {
+        width: 100%; 
+    }
+}
+
+@keyframes smoothTransition {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.container {
+    animation: smoothTransition 4s ease-in-out;
+}
+.sortButton{
+    margin: 20px;
+    padding: 10px;
+}
