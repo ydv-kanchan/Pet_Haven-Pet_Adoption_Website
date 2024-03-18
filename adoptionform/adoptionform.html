@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Form</title>
+    <link rel="icon" href="doglogo.png">
+    <link rel="stylesheet" href="adoptionform.css">
+</head>
+<body>
+    <form id="adoptionForm">
+        <h2>Pet Adoption Form</h2>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name" autocomplete="name">
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email" autocomplete="email">
+
+        <label for="phone">Your Phone:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Your Phone" autocomplete="tel">
+
+        <label for="address">Your Address:</label>
+        <input type="text" id="address" name="address" required placeholder="Your Address" autocomplete="address-level1">
+
+        <label for="petType">Type of Pet:</label>
+        <select id="petType" name="petType">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="bird">Bird</option>
+            <option value="rabbit">Rabbit</option>
+        </select>
+
+        <label for="reason">Why do you want to adopt a pet?</label>
+        <input type="text" id="reason" name="reason" required placeholder="Reason for adoption">
+
+        <label for="homeType">Type of Home:</label>
+        <select id="homeType" name="homeType">
+            <option value="house">House</option>
+            <option value="apartment">Apartment</option>
+            <option value="condo">Condo</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="currentPets">Current Pets:</label>
+        <select id="currentPets" name="currentPets">
+            <option value="none">None</option>
+            <option value="dog">Dog(s)</option>
+            <option value="cat">Cat(s)</option>
+            <option value="both">Both</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="petExperience">Pet Experience:</label>
+        <textarea id="petExperience" name="petExperience" placeholder="Describe your pet experience"></textarea>
+
+        <label for="previousPet">Previous Pets:</label>
+        <textarea id="previousPet" name="previousPet" placeholder="Have you ever had a pet before?"></textarea>
+
+        <label for="workSchedule">Work Schedule:</label>
+        <select id="workSchedule" name="workSchedule">
+            <option value="home">Work from home</option>
+            <option value="part-time">Part-time</option>
+            <option value="full-time">Full-time</option>
+            <option value="flexible">Flexible</option>
+        </select>
+
+        <label for="preferredDateTime">Preferred Date and Time for Meeting:</label>
+        <input type="datetime-local" id="preferredDateTime" name="preferredDateTime" required title="Select your preferred date and time for meeting the pet">
+
+        <button type="submit">Submit Application</button>
+    </form>
+    <script src="adoptionform.js"></script>
+</body>
+</html>
