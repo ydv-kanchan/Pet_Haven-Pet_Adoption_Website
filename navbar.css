@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navigation-bar{
+    width: 100%;
+    height: 60px;
+    background: #eae9e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+    position: sticky;
+    top: 0;
+
+}
+
+.content-left{
+    width: 70px;
+    height: 100%;
+    /* background: green; */
+}
+
+.content-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-middle{
+    display: flex;
+    width: 550px;
+    align-items: center;
+    /* background: green; */
+}
+
+.content-middle a{
+    text-decoration: none;
+    color: black;
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: 900;
+    
+}
+
+.dropbutton{
+    background-color:transparent;
+    color: rgb(40, 40, 40);
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a{
+    width: 100px;
+    text-align: left;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 14px;
+    color:  rgb(40, 40, 40);
+}
+
+.dropdown-content-text{
+    margin: 2%;
+}
+
+.dropdown-content a:hover{
+    background-color: #bfbfc1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.content-right{
+    width: 370px;
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* justify-content: center; */
+}
+
+.content-right-input input{
+    width: 270px;
+    height: 40px;
+    border-radius: 10px;
+    border: #f2f2f2 solid 2px;
+    padding: 3%;
+    font-weight: 700;
+}
+
+.content-right-input input::placeholder{
+    padding: 3%;
+    font-weight: 700;
+}
+
+.content-right-icons{
+    display: flex;
+}
+
+.content-right-icons a{
+    text-decoration: none;
+    margin: 10px;
+}
+
+.content-right-icons i{
+
+    font-size: 18px;
+    color: black;
+
+}
+
+
+@media (max-width: 1040px){
+    .content-middle{
+        width: 400px;
+    }
+}
+
+@media (max-width: 890px){
+    .content-middle a{
+        font-size: 15px;
+    }
+
+    .content-middle{
+        width: 360px;
+    }
+    .content-right{
+        width: 310px;
+    }
+
+    .content-right i{
+        font-size: 15px;
+    }
+
+    .content-right-input input{
+        width: 240px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 750px) {
+    .pet-care-header{
+        display: none;
+    }
+
+    .content-middle{
+        width: 260px;
+    }
+}
+
+@media (max-width: 660px) {
+    .content-left{
+        width: 50px;
+    }
+
+    .content-right-input input{
+        width: 200px;
+        height: 30px;
+    }
+
+    .content-right{
+        width: 270px;
+    }
+}
+
+@media (max-width: 600px) {
+    .content-left{
+        width: 40px;
+    }
+
+    .content-middle a{
+        font-size: 14px;
+    }
+
+    .content-right i{
+        font-size: 14px;
+    }
+
+    .content-middle{
+        width: 240px;
+    }
+
+    .content-right-input input{
+        width: 140px;
+        height: 25px;
+    }
+
+    .content-right{
+        width: 200px;
+    }
+}
+
+/* -------------------------------------------------------------------- */
+
+.footer{
+    width: 100%;
+    min-height: 50vh;
+    background-image: url("footer images/footer_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:white;
+    background-position: center center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list1{
+    margin-top: 2%;
+    /* background: red; */
+    /* margin-right: 20%; */
+    width: 20%;
+    
+}
+
+.list1 li{
+    list-style: none;
+}
+
+.social-media{
+    display: flex;
+    margin: 4%;
+}
+
+.social-media li{
+    margin: 3%;
+}
+
+.social-media img{
+    height: 50px;
+}
+
+
+.list2{
+    margin-top: 2%;
+    /* background: red; */
+    /* margin-right: 24%; */
+    width: 10%;
+
+}
+
+.list2 li{
+    list-style: none;
+
+}
+
+.list3{
+    margin-top: 2%;
+    /* background: red; */
+    width: 15%;
+}
+
+
+.list3 li{
+    list-style:none;
+}
+
+.list-heading{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.contact-information-list li{
+    margin-top: 2%;
+    font-size: 16px;
+}
+
+.list-2-links li{
+    font-size: 16px;
+}
+
+.list-2-links a:hover{
+    text-decoration: underline;
+    margin-top: 2%;
+}
+
+.term-of-list li{
+    font-size: 16px;
+    margin-top: 2%;
+}
+

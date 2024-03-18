@@ -1,0 +1,447 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: scroll;
+}
+
+/* slide */
+.carousel {
+    min-height: 100vh;
+}
+.slide{
+    background-color:white; 
+}
+/* slide */
+
+/* header */
+.logo{
+    display: flex;
+}
+.logo h2{
+    cursor: pointer;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+.logo a{
+    text-decoration: none;
+}
+.logo h2:hover{
+    color: #68bd90;
+}
+.navbar {
+    background-color:  #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.logo img {
+    cursor: pointer;
+    height: 45px;
+}
+.logo img:hover{
+    cursor: pointer;
+    height: 50px;
+}
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: large;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #68bd90;
+    text-decoration: underline;
+    font-size: larger;
+}
+.uncolour-button{
+    font-size: larger;
+    border-radius: 20px;
+    background-color: white;
+    border-color: black;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+.uncolour-button:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+.coloured-button{
+    font-size: larger;
+    border-radius: 20px;
+    background-color: #68bd90;
+    border-color: #68bd90;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+.coloured-button:hover{
+    background-color: white;
+    border-color: grey;
+    cursor: pointer;
+    color: black;
+}
+@media screen and (max-width:950px) {
+    .nav-links a{
+        display: none;
+    }
+}
+/* header */
+
+section{
+    width: 100vh;
+    background-color: skyblue;
+}
+
+/* section1 */
+.section-1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.texts{
+    margin-top: 10%;
+}
+.button-container {
+    position: absolute;
+    top: 165.6%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.button-container a {
+    padding: 26px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 700;
+    color: #fff;
+}
+.colour-button{
+    border-radius: 30px;
+    font-size: larger;
+    background-color: #b16b5d;
+}
+.images img{
+    padding: 3%;
+}
+
+.heading{
+    font-size: 60px;
+    font-weight: 600;
+    color: #b16b5d;
+}
+.heading:hover{
+    font-size: 59px;
+    font-weight: 600;
+    color: #b16b5d;
+}
+.text{
+    margin-left: 34px;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 50px;
+    padding-left: 40px;
+    color: black;
+    border-radius: 40px;
+    height: 50%;
+    background-color: #c7e1d3;
+}
+.images{
+    width: 50%;
+}
+@media screen and (max-width:1380px) {
+    .images{
+        display: none;
+    }
+    .colour{
+        display: none;
+    }
+}
+
+.text:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+.section-1-explore{
+    padding: 2%;
+    font-size: larger;
+    margin-top: 5%;
+    margin-left: 40%;
+    border-radius: 30px;
+    border-color: #b16b5d;
+    background-color: #b16b5d;
+    color: white;
+}
+.section-1-explore:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+/* section 1 */
+
+
+
+/* section 2 */
+.section-2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color:white;
+}
+
+.texts2{
+    width: 50%;
+    background-color: #c7e1d3;
+}
+.heading2{
+    margin-top: 20%;
+    margin-left: 15%;
+    font-size: 50px;
+    font-weight: 600;
+    color: #b16b5d;
+}
+.heading2:hover{
+    font-size: 49px;
+    font-weight: 600;
+    color: #b16b5d;
+}
+.text2:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+.text2{
+    margin-left: 10%;
+    font-size: 28px;
+    font-weight: 300;
+    padding-top: 5%;
+    padding-left: 40px;
+    color: black;
+    border-radius: 40px;
+    height: 30%;
+    background-color: #c7e1d3;
+}
+.section-2-explore{
+    padding: 2%;
+    font-size: larger;
+    margin-left: 40%;
+    border-radius: 30px;
+    border-color: #b16b5d;
+    background-color: #b16b5d;
+    color: white;
+}
+.section-2-explore:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.images2 img{
+    height: 100%;
+}
+@media screen and (max-width:1380px) {
+    .images2{
+        display: none;
+    }
+    .texts2{
+        width: 100%;
+    }
+    .text2{
+        margin-left: 10%;
+        font-size: 28px;
+        font-weight: 300;
+        padding-top: 5%;
+        padding-left: 10px;
+        color: black;
+        border-radius: 40px;
+        height: 30%;
+        background-color: #c7e1d3;
+    }
+    .heading2{
+        margin-top: 20%;
+        margin-left: 15%;
+        font-size: 40px;
+        font-weight: 600;
+        color: #b16b5d;
+    }
+    .heading2:hover{
+        font-size: 39px;
+        font-weight: 600;
+        color: #b16b5d;
+    }
+}
+
+/* section 2 */
+
+
+/* section 3 */
+.section-3{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    justify-content: space-around;
+    background-color:  white;
+}
+.texts3{
+    width: 40%;
+    height: 70%;
+}
+@media screen and (max-width:1380px) {
+    .texts3{
+        width: 90%;
+        height: 90%;
+    }
+}
+.heading3{
+    font-size: 40px;
+    margin-top: 20%;
+    margin-left: 15%;
+    font-weight: 600;
+    color: #b16b5d;
+}
+.heading3:hover{
+    font-size: 44px;
+    font-weight: 600;
+    color: #b16b5d;
+}
+.text3{
+    margin-left: 34px;
+    font-size: 26px;
+    font-weight: 300;
+    padding-top: 50px;
+    padding-left: 40px;
+    color: black;
+    border-radius: 40px;
+    height: 50%;
+    background-color: #c7e1d3;
+}
+.text3:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+/* section 3 */
+
+
+
+/* section 4 */
+.section-4{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.box {
+    height:70%;
+    width:50%;
+    padding:2rem 1rem;
+    margin:50px auto;
+    margin-top: 13%;
+    background-color: white;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 20px 35px rgba(0,0,0,0.5);
+}
+h1 {
+    font-size:2rem;
+    color:black;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1.5px;
+}
+form input {
+    width:92%;
+    outline:none;
+    border:1px solid #fff;
+    padding:12px 20px;
+    margin-bottom:10px;
+    border-radius: 20px;
+    background:#e4e4e4;
+}
+.button-sign-up {
+    font-size:1rem;
+    font-weight:700;
+    margin-top:1.8rem;
+    padding:10px 0;
+    border-radius: 20px;
+    outline:none;
+    border:none;
+    width:90%;
+    color:#fff;
+    cursor:pointer;
+    background-color: #b16b5b;
+    margin-bottom: 1%;
+    letter-spacing: 1.1px;
+}
+.button-sign-up:hover {
+    background: #9a5850; 
+}
+input:focus {
+    border:1px solid rgb(192,192,192); 
+}
+
+.terms {
+    margin-top: 0.1rem;
+}
+.terms input {
+    margin-top: 0.1rem;
+    height:1.5em;
+    width:1em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.terms label {
+    margin-top: 0.1rem;
+    font-size: 0.7rem;
+}
+
+.terms a {
+    margin-top: 0.1rem;
+    color:#b16b5b;
+    text-decoration: none;
+}
+
+.member {
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    color:#636363;
+}
+
+.member a {
+    color:#b16b5b;
+    text-decoration:none;
+}
+.form-sign-in{
+    width: 50%;
+    background-color: #f2f2f2 ;
+}
+@media screen and (max-width:1380px){
+    .form-sign-in {
+        width: 100%;
+       background-color: #f2f2f2;
+}  
+}
+/* section 4 */
+
+
+/* slide 1 images  */
+.text-centerr{
+    padding: 3%;
+}
+.text-centerr h1{
+    font-size: 50px;
+}
+/* slide 1 */
